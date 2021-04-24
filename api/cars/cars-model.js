@@ -1,12 +1,4 @@
-const db = require('../data/db-config.js')
-
-module.exports = {
-  getAll,
-  getById,
-  create,
-  update,
-  remove,
-};
+const db = require('../../data/db-config.js');
 
 const getAll = () => {
   // DO YOUR MAGIC
@@ -42,3 +34,13 @@ const remove = (id) => {
     .where({ id })
     .del();
 }
+
+module.exports = {
+  getAll,
+  getById,
+  create,
+  update,
+  remove,
+};
+
+
